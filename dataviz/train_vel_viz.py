@@ -16,11 +16,11 @@ fi=open(filename_ext,'r')
 
 # plot them
 # TODO: make a basemap
-fig = plt.figure(facecolor = '0.05')
-ax = plt.Axes(fig, [0., 0., 1., 1.], )
-ax.set_aspect('equal')
-ax.set_axis_off()
-fig.add_axes(ax)
+#fig = plt.figure(facecolor = '0.05')
+#ax = plt.Axes(fig, [0., 0., 1., 1.], )
+#ax.set_aspect('equal')
+#ax.set_axis_off()
+#fig.add_axes(ax)
 
 linenum=0
 for line in fi:
@@ -41,7 +41,13 @@ for line in fi:
     linenum+=1
 fi.close()
 
-plt.plot(redlon, redlat, color = "red", lw = 0.8, alpha = 0.8)
+m = Basemap(llcrnrlon=min(lon),llcrnrlat=min(lat),urcrnrlon=max(lon),urcrnrlat=max(lat),lat_ts=20,
+            resolution='c',projection='merc',lon_0=lon[0],lat_0=lat[0])
+x1, y1 = m(redlon, redlat)
+m.drawmapboundary(fill_color='white')
+m.scatter(x1, y1, s=5, c='r', marker="o")
+
+#plt.plot(redlon, redlat, color = "red", lw = 0.8, alpha = 0.8)
 plt.show()
 #filename = "%s.%s" % (filename,'png')
 #plt.savefig(filename, facecolor = fig.get_facecolor(), bbox_inches='tight', pad_inches=0, dpi=300)
