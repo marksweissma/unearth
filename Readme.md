@@ -11,17 +11,26 @@ output [/data/post_process]: [train_id].csv DATETIME,WEIGHT,LATITUDE,LONGITUDE,P
 ## Day 2
 Compute
 - Create a Spark Cluster to process train-run data [DONE using Amazon EMR 5.0.0]
-- Next step is to open the port and use Zepellin, and Jupyter with install_these
--
+- Next step is to open the port and use Zepellin [DONE]
+- Upload all the data to s3://unearthbhp [DONE]
+- Map S3 to HDFS Cluster [DONE]
+- Install Jupyter and Python goodness on the cluster, moving to PySpark [DONE]
 
 Model
 - Decorate the Model
 - Run solutions and score them [Axed]
 Approach we are creating an early warning system with the model. Wireframe for the same is at: https://wireframe.cc/u8qbSr
 
+Application
+- React Application
+
 ## Day 3
 - Interactive capability to do early detection.
-- 
+-
+
+Presentation
+- Powerpoint - (Problem, Demo, Takeaway - S3)
+- Background - BHP IROC & Ninglou
 
 # Team
 Mark, Logan & Vaibhav

@@ -1,0 +1,49 @@
+{
+  "name": "unearthbhp",
+  "version": "1.0.0",
+  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server",
+    "lint": "eslint src",
+    "build": "webpack --config=webpack.build.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "boilerplate",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "webpack"
+  ],
+  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
+  },
+  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "devDependencies": {
+    "babel-core": "^5.4.7",
+    "babel-eslint": "^3.1.9",
+    "babel-loader": "^5.1.2",
+    "eslint-plugin-react": "^2.3.0",
+    "react-hot-loader": "^1.2.7",
+    "webpack": "^1.9.6",
+    "webpack-dev-server": "^1.8.2"
+  },
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "fetchival": "~0.2.0",
+    "react": "^0.13.0",
+    "react-bootstrap": "~0.23.7",
+    "react-loader": "~1.4.0",
+    "whatwg-fetch": "~0.9.0"
+  }
+}
