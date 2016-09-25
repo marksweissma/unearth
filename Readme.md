@@ -9,12 +9,19 @@ Minimum Working Model - We will create a simple model using our environment to f
 output [/data/post_process]: [train_id].csv DATETIME,WEIGHT,LATITUDE,LONGITUDE,PROFILE,SPEEDLIMIT,FIRESPEED,GPSSTATUS
 
 ## Day 2
-- Create a Spark Cluster to process train-run data
+Compute
+- Create a Spark Cluster to process train-run data [DONE using Amazon EMR 5.0.0]
+- Next step is to open the port and use Zepellin, and Jupyter with install_these
+-
+
+Model
 - Decorate the Model
-- Run solutions and score them
+- Run solutions and score them [Axed]
+Approach we are creating an early warning system with the model. Wireframe for the same is at: https://wireframe.cc/u8qbSr
 
 ## Day 3
-- Interactive capability to explore solutions (??)
+- Interactive capability to do early detection.
+- 
 
 # Team
 Mark, Logan & Vaibhav
